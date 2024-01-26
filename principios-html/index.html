@@ -11,6 +11,8 @@
     <h1>Mi primer pagina web</h1>
     <h2>Desarrollada en la clase de diseño digital</h2>
 
+    <img width="200" src="./images/logo-IS.jpg" alt="Logo de la Universidad Nacional Autónoma de Honduras">
+
     <p> Listado de asignaturas </p>
 
     <!-- No tiene efecto en la pagina web  -->
@@ -20,13 +22,6 @@
         <li>Inteligencia Artificial</li>
         <li>Lenguajes de Programación</li>
     </ol>
-
-    <p>
-        Listado de <span>asignaturas cursadas</span> en el 
-        periodo <strong><u>I PAC 2024 </u></strong>, en la carrera 
-        de <u>Ingeniería en Sistemas</u>.
-    </p>
-    <p> Horario </p>
     <!-- Listas desordenadas -->
     <!-- <ul>
         <li>Diseño Digital</li>
@@ -34,8 +29,57 @@
         <li>Lenguajes de Programación</li>
     </ul> -->
 
-</body>
+    <p>
+        Listado de <span>asignaturas cursadas</span> en el
+        periodo <strong><u>I PAC 2024 </u></strong>, en la carrera
+        de <u>Ingeniería en Sistemas</u>.
+    </p>
+    <p> Horario </p>
 
+    <table border="1" cellspacing="0" cellpadding="10" width="100%">
+        <thead>
+            <tr>
+                <td colspan="4">
+                    <center>Horario de clases</center>
+                </td>
+            </tr>
+            <tr>
+                <th>Código de asignatura</th>
+                <th>Nombre</th>
+                <th>UV</th>
+                <th>Hora de inicio</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>IS711</td>
+                <td>Diseño Digital</td>
+                <td rowspan="3">4</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td>IS701</td>
+                <td>Inteligencia Artificial</td>
+                <!-- <td>4</td> -->
+                <td>14:00</td>
+            </tr>
+            <tr>
+                <td>IS513</td>
+                <td>Lenguajes de Programación</td>
+                <!-- <td>4</td> -->
+                <td>17:00</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot></tfoot>
+
+    </table>
+
+
+
+</body>
 
 <footer></footer>
 
