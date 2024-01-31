@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Mi formulario</h1>
+    <hr>
+
+    <form>
+
+        <label>
+            Nombre:
+            <input required type="text" placeholder="Ingrese su nombre" minlength="3" maxlength="10">
+        </label>
+
+        <br>
+
+        <label for="correo">
+            Correo:
+        </label>
+        <input id="correo" type="email" placeholder="Ingrese su correo">
+        <br>
+        <label>
+            Contraseña:
+            <input type="password" placeholder="Ingrese su contraseña">
+        </label>
+        <br>
+        <label>
+            Recodar contraseña:
+            <input type="checkbox" checked>
+        </label>
+
+        <!-- <input type="button" value="Guardar" >
+        <input type="reset" value="Limpiar" >
+        <input type="submit" value="Enviar" > -->
+
+        <br>
+
+        <input type="range" min="0" max="10" step="1">
+
+
+        <br>
+        <br>
+        <button type="button">Guardar</button>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+
+</html>
