@@ -11,11 +11,11 @@
     <h1>Mi formulario</h1>
     <hr>
 
-    <form>
+    <form action="#" >
 
         <label>
             Nombre:
-            <input required type="text" placeholder="Ingrese su nombre" minlength="3" maxlength="10">
+            <input name="nombre" required type="text" placeholder="Ingrese su nombre" minlength="3" maxlength="10">
         </label>
 
         <br>
@@ -23,26 +23,64 @@
         <label for="correo">
             Correo:
         </label>
-        <input id="correo" type="email" placeholder="Ingrese su correo">
+        <input name="correo" id="correo" type="email" placeholder="Ingrese su correo">
         <br>
         <label>
             Contraseña:
-            <input type="password" placeholder="Ingrese su contraseña">
+            <input name="contrasenia" type="password" placeholder="Ingrese su contraseña">
         </label>
         <br>
         <label>
             Recodar contraseña:
-            <input type="checkbox" checked>
+            <input name="recordar" type="checkbox" checked>
         </label>
 
         <!-- <input type="button" value="Guardar" >
         <input type="reset" value="Limpiar" >
         <input type="submit" value="Enviar" > -->
-
         <br>
 
-        <input type="range" min="0" max="10" step="1">
+        <select name="lenguajes" >
 
+            <option value="1"> HTML </option>
+            <option value="2"> CSS </option>
+            <option value="3"> Javascript </option>
+
+            <hr>
+
+            <optgroup label="Otros lenguajes" >
+                <option value="4"> C++ </option>
+                <option value="5"> C# </option>
+                <option value="6"> F# </option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+
+        <input name="lenguajes2" list="lenguajes2" >
+        <!-- "la base de datos" -->
+        <datalist id="lenguajes2" >
+            <option value="HTML">
+            <option value="CSS">
+            <option value="Javascript">
+            <option value="C++">
+            <option value="C#">
+            <option value="F#">
+        </datalist>        
+
+        <br>
+        <br>
+
+        <textarea placeholder="Ingrese instrucciones de entrega" name="" id="" cols="30" rows="10"></textarea>
+
+        <br>
+        <br>
+
+        <!-- <input type="file" name="" id="" accept="png,doc,docx,xlsx"> -->
+
+        <!-- <input type="range" min="0" max="10" step="1"> -->
 
         <br>
         <br>
