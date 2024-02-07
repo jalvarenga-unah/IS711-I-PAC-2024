@@ -4,35 +4,7 @@
 <head>
     <title>Mi primer página web, desarrollada en la clase de diseño digital</title>
     <meta charset="utf-8">
-
-    <style>
-        /* forma 1  */
-
-        body {
-            background-color: #f2f2f2;
-            padding: 0 200px 0 50px;
-            margin: 0;
-            font-size: 16px; 
-        }
-
-        h1 {
-            color: rgb(57, 73, 171);
-            background-color: aqua;
-        }
-
-        p{
-            font-family: system-ui, -apple-system, sans-serif;
-            /* font-weight: bold; */
-        }
-
-        #lable_listado{
-            font-weight: 900;
-            
-        }
-
-    </style>
-
-
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
@@ -40,25 +12,25 @@
     <h1 style=" color : rgb(57, 73, 171); background-color: aqua; ">Mi primer pagina web</h1>
     <h2>Desarrollada en la clase de diseño digital</h2>
 
-    <img width="200" src="./images/logo-IS.jpg" alt="Logo de la Universidad Nacional Autónoma de Honduras">
+    <img class="circular-img" src="./images/logo-IS.jpg" alt="Logo de la Universidad Nacional Autónoma de Honduras">
 
     <p id="lable_listado"> Listado de asignaturas </p>
 
     <!-- No tiene efecto en la pagina web  -->
     <!-- Listas ordenadas -->
     <ol type="1" start="30">
-        <li>Diseño Digital</li>
-        <li>Inteligencia Artificial</li>
-        <li>Lenguajes de Programación</li>
+        <li class="list-item bg-green text-green">Diseño Digital</li>
+        <li class="list-item">Inteligencia Artificial</li>
+        <li class="list-item">Lenguajes de Programación</li>
     </ol>
     <!-- Listas desordenadas -->
-    <!-- <ul>
+    <ul>
         <li>Diseño Digital</li>
         <li>Inteligencia Artificial</li>
         <li>Lenguajes de Programación</li>
-    </ul> -->
+    </ul>
 
-    <p>
+    <p class="list-item">
         Listado de <span>asignaturas cursadas</span> en el
         periodo <strong><u>I PAC 2024 </u></strong>, en la carrera
         de <u>Ingeniería en Sistemas</u>.

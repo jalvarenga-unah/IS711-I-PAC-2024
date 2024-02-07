@@ -1,0 +1,60 @@
+/* forma 1  */
+html {
+    font-family: system-ui, -apple-system, sans-serif;
+    /* font-weight: bold; */
+    scrollbar-color: #333 #f2f2f2;
+}
+
+body {
+    background-color: #f2f2f2;
+    padding: 0 200px 0 50px;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    color: rgb(57, 73, 171);
+    background-color: aqua;
+}
+
+/* Forma 2 */
+#lable_listado {
+    font-weight: 900;
+}
+
+/* Forma 3 */
+
+ol li {
+    list-style: none;
+}
+
+.list-item {
+    color: #f2f2f2;
+    background-color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+thead{
+    background-color: #333;
+    color: #f2f2f2;
+
+}
+
+
+.bg-green{
+    background-color: rgba(41, 107, 41, 0.322);
+}
+
+.text-green{
+    color:green;
+}
+
+.circular-img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    /* filter: opacity(0.9); */
+}
