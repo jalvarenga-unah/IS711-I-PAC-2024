@@ -7,15 +7,25 @@ html {
 
 body {
     background-color: #f2f2f2;
-    padding: 0 200px 0 50px;
-    margin: 0;
     font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-h1 {
-    color: rgb(57, 73, 171);
-    background-color: aqua;
+.titulo-principal {
+    color: #333;
+    font-size: 60px;
+    text-decoration: underline;
+    text-align: center;
+  
 }
+
+.subtitulo{
+    color:#333;
+    font-size: 38px;
+    text-align: center;
+}
+
 
 /* Forma 2 */
 #lable_listado {
@@ -56,5 +66,16 @@ thead{
     border-radius: 100%;
     width: 200px;
     height: 200px;
+    display: flex;
+    margin: 0 auto;
     /* filter: opacity(0.9); */
+}
+
+.division{
+    width: 20%;
+    border: 3px solid #333;
+    border-radius: 10px;
+    display: flex;
+    margin: 40px auto;
+    box-shadow: 3px 5px 5px #b6b6b6;
 }
