@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+main section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
