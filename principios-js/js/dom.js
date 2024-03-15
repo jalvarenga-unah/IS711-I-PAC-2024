@@ -9,7 +9,7 @@ titulo.style.color = 'red'
 titulo.style.fontSize = '50px'
 
 const parrafo = document.querySelector('p')
-const parrafos = document.querySelectorAll('p')
+const parrafos = document.querySelectorAll('p') //Lista de nodos (elementos HTML)
 
 parrafos.forEach(parrafo => {
     parrafo.style.color = 'blue'
