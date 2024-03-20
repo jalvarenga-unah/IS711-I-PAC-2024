@@ -12,6 +12,7 @@ console.log('promesas.js')
 const miPromesa = () => {
 
     console.log('Ejecutando la promesa')
+
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve('Hola mundo')
@@ -23,11 +24,18 @@ const miPromesa = () => {
 }
 
 
+const manejoRespuesta = (data) => {
+    console.log(data)
+}
+
 const resultadoPromesa = miPromesa()
 
 resultadoPromesa
+    //? .then() -> se ejecuta cuando la promesa se resuelve de manera correcta
     .then((resultado) => {
         console.log(resultado)
+
+        //? .catch() -> se ejecuta cuando la promesa se rechaza
     }).catch((error) => {
         console.log(error)
     }).finally(() => {
@@ -50,12 +58,16 @@ const validarNumero = (valor) => {
         reject('No es un número')
 
     })
+
+
 }
 
 const resolverPromesaAsincrona = async () => {
 
     console.log('Ejecutando la promesa asincrona')
     try {
+        const miPromesa = await miPromesa()
+
         const resultado = await validarNumero('otra cosa') // Espera a que la promesa se resuelva
 
         console.log(resultado)
