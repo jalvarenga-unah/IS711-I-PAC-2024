@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios con JS</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<style>
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
 </head>
+
 <body>
 
-
     <form id="form_registro">
-
         <input type="text" placeholder="Ingrese su nombre" name="nombre">
         <input type="email" placeholder="Ingrese su correo" name="correo">
         <input type="tel" placeholder="Ingrese su telefono" name="telefono">
@@ -18,8 +31,16 @@
 
         <button type="submit">Guardar</button>
     </form>
-    
+
+    <hr>
+
+    <button onclick="mostrarMensaje()" id="btn_mensaje">mostrar mensaje</button>
+
+    <hr>
+
+    <input type="number" placeholder="detectar cambios" id="input">
 
     <script src="./js/form.js"></script>
 </body>
+
 </html>

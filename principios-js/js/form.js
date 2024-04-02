@@ -24,3 +24,33 @@ form.addEventListener('submit', (event) => {
     console.log(data)
 
 })
+
+const botonMensaje = document.querySelector('#btn_mensaje')
+
+const mostrarMensaje = () => {
+    alert('Hola desde la funcion')
+
+}
+
+// function mostrarMensaje() {
+//     alert('Hola desde la funcion')
+// }
+
+
+botonMensaje.addEventListener('mouseover', () => {
+    alert('pasó el mouse por encima del boton')
+})
+// botonMensaje.addEventListener('click', mostrarMensaje)
+
+const input = document.querySelector('#input')
+
+input.addEventListener('keyup', (e) => {
+
+    console.log(e.keyCode)
+    if (e.keyCode === 13) {
+
+        console.log('Presiono la tecla enter')
+
+    }
+
+})
