@@ -1,9 +1,27 @@
 
 const app = require('node:http')
+const productos = require('./productos.json')
 
 const server = app.createServer((request, response) => {
     // write es el contenido que se va a mostrar en el navegador
-    response.write('<h1>Hola mundo desde Node Js</h1>')
+    console.log('Se hizo una petición')
+
+    switch (request.url) {
+        case '/productos':
+            response.setHeader('Content-Type', 'application/json')
+            response.statusCode = 200
+            response.write(JSON.stringify(productos))
+            break
+        case '/productos/1':
+            response.setHeader('Content-Type', 'application/json')
+            response.statusCode = 200
+            const producto = productos.find(item => item.id === 1)
+            response.write(JSON.stringify(producto))
+            break
+        default:
+            response.write('<h1>Esto es el home</h1>')
+    }
+
     response.end() // para indicar que ya terminamos de enviar la respuesta
 })
 
