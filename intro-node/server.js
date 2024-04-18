@@ -28,6 +28,26 @@ const server = app.createServer((request, response) => {
         case 'POST':
             switch (request.url) {
                 case '/productos':
+
+                    //obtener de la petición el body
+                    let body = ''
+
+                    request.on('data', (chunck) => {
+                        body += chunck.toString()
+                    })
+
+
+                    request.on('end', () => {
+                        console.log(body)
+
+                        // "guardar" el producto en la base de datos
+                        productos.unshift(JSON.parse(body))
+                    })
+
+                    //tomar esos datos y guardarlos en la base de datos
+
+
+                    //enviar una respuesta al cliente
                     response.setHeader('Content-Type', 'application/json')
                     response.statusCode = 201
                     response.write(JSON.stringify({ message: 'Producto creado' }))

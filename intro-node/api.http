@@ -1,2 +1,12 @@
 ### 
 GET http://localhost:3000/productos
+
+
+### Creación de un producto
+POST http://localhost:3000/productos
+content-type: application/json
+
+{
+    "nombre": "Producto 2",
+    "precio": 100
+}
