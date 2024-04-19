@@ -1,0 +1,16 @@
+### Consulta de productos
+GET http://localhost:3000/productos
+
+
+### Consulta de productos por id
+GET http://localhost:3000/productos/3/algo_mas
+
+
+### Crear un producto
+POST http://localhost:3000/productos
+content-type: application/json
+
+{
+    "nombre": "Producto 2",
+    "precio": 100
+}
