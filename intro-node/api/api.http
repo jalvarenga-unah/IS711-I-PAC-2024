@@ -3,7 +3,7 @@ GET http://localhost:3000/productos
 
 
 ### Consulta de productos por id
-GET http://localhost:3000/productos/3/algo_mas
+GET http://localhost:3000/productos/3
 
 
 ### Crear un producto
@@ -11,6 +11,9 @@ POST http://localhost:3000/productos
 content-type: application/json
 
 {
-    "nombre": "Producto 2",
-    "precio": 100
+    "title": "Producto 3",
+    "price": 100.10,
+    "description": "Esto es una segunda prueba, en la que se necesitan al menos 20 caracteres",
+    "category": "Categoria de prueba",
+    "image": "https://www.google.com"
 }
